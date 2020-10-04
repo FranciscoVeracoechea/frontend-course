@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Us</title>
+		<link rel="stylesheet" href="../css/styles.css" />
+	</head>
+	<body>
+		<header>
+			<a href="/class-4/pages/index.html"> Home page </a>
+			<a href="/class-4/pages/contact.html"> Contact Us </a>
+		</header>
+
+		<main>
+
+      <h1>Contact Us</h1>
+
+			<div class="form-container">
+				<form action="/class-4/pages/index.html" method="GET">
+					<div class="form-input">
+						<label for="email_input"> Email </label>
+						<input type="email" name="email" id="email_input" required />
+					</div>
+					<div class="form-input">
+						<label for="username_input"> Username </label>
+						<input type="text" name="username" id="username_input" required />
+					</div>
+					<div class="checkbox-input">
+						<label> Favorites foods </label>
+						<div class="checkbox-container">
+
+              <label for="gallo_input">
+                Gallo Pinto
+                <input type="checkbox" name="food" id="gallo_input" value="Gallo Pinto" />
+              </label>
+
+              <label for="arepa_input">
+                Arepa
+                <input type="checkbox" name="food" id="arepa_input" value="Arepa" />
+              </label>
+
+							<label for="casado_input">
+                Casado
+                <input type="checkbox" name="food" id="casado_input" value="Casado" />
+              </label>
+						</div>
+          </div>
+          <div class="form-input">
+            <button class="form-button" type="submit">
+              Send
+            </button>
+            <button class="form-button" type="reset">
+              Reset
+            </button>
+          </div>
+				</form>
+			</div>
+		</main>
+	</body>
+</html>
