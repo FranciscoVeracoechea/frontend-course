@@ -1,3 +1,6 @@
+.navigation * {
+  z-index: 100;
+}
 .navigation {
   padding: 0 2em;
   z-index: 100;
@@ -42,4 +45,25 @@
   text-transform: uppercase;
   font-weight: normal;
   color: var(--primary-hover);
+}
+
+.navigation .menu-btn-wrapper {
+  display: none;
+  height: 100%;
+  width: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation .menu-btn-wrapper .menu-btn {
+  background-color: transparent;
+  border: none;
+  outline: unset;
+  height: 2.4em;
+}
+
+.navigation .menu-btn-wrapper .menu-btn img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
