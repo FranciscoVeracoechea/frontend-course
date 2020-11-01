@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style/default.css">
+  <link rel="stylesheet" href="./style/navigation.css">
+  <link rel="stylesheet" href="./style/hero.css">
+  <link rel="stylesheet" href="./style/gallery.css">
+  <link rel="stylesheet" href="./style/media.css">
+  
+
+</head>
+<body>
+  <header>
+    <nav class="navigation">
+      <div class="nav-container" id="nav-container">
+        <ul class="nav-bar">
+          <li>
+            <i class="material-icons main-icon">home</i>
+            <a class="link" href="#">Home</a>
+          </li>
+          <li>
+            <i class="material-icons main-icon">phone</i>
+            <a class="link" href="#">Contact</a>
+          </li>
+          <li>
+            <i class="material-icons main-icon">info</i>
+            <a class="link" href="#">About</a>
+          </li>
+          <li>
+            <i class="material-icons main-icon">settings</i>
+            <a class="link" href="#">Services</a>
+          </li>
+          <li>
+            <i class="material-icons main-icon">euro</i>
+            <a class="link" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-title">
+        <h1>Responsive Design 2</h1>
+      </div>
+      <button class="icon-wrapper" id="menu-button">
+        <i class="material-icons main-icon">menu</i>
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-section">
+      <div class="hero-wrapper">
+        <div class="hero-content">
+          <h2>
+            Class 7 - Responsive Design
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam qui assumenda quo sunt, cumque rem sapiente tenetur beatae aut delectus nihil dicta perferendis ullam modi dolorem neque deleniti repellendus ducimus!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="gallery-section">
+      <div class="gallery-wrapper">
+        <div class="gallery-item">
+          <img src="./images/gallery-1.jpg" alt="Gallery 1">
+        </div>
+        <div class="gallery-item">
+          <img src="./images/gallery-2.jpg" alt="Gallery 2">
+        </div>
+        <div class="gallery-item">
+          <img src="./images/gallery-3.jpg" alt="Gallery 3">
+        </div>
+        <div class="gallery-item">
+          <img src="./images/gallery-4.jpg" alt="Gallery 4">
+        </div>
+      </div>
+    </section>
+    <section class="gallery-section">
+      <div class="gallery-wrapper">
+        <div class="gallery-item">
+          <img src="./images/gallery-1.jpg" alt="Gallery 1">
+        </div>
+        <div class="gallery-item">
+          <img src="./images/gallery-2.jpg" alt="Gallery 2">
+        </div>
+        <div class="gallery-item">
+          <img src="./images/gallery-3.jpg" alt="Gallery 3">
+        </div>
+        <div class="gallery-item">
+          <img src="./images/gallery-4.jpg" alt="Gallery 4">
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    let isOpen = true;
+
+    const button = document.querySelector('#menu-button');
+    const navigation = document.querySelector('#nav-container');
+    const body = document.querySelector('body');
+
+    button.addEventListener('click', () => {
+      if (isOpen) {
+        navigation.style.left = 0;
+        body.style.paddingLeft = '180px';
+        isOpen = false;
+      } else {
+        navigation.style.left = '-180px';
+        body.style.paddingLeft = 0;
+        isOpen = true;
+      }
+    });
+    
+  </script>
+</body>
+</html>

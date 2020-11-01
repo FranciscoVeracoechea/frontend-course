@@ -1,0 +1,21 @@
+.gallery-section {
+  padding: var(--content-padding);
+}
+
+.gallery-section .gallery-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.gallery-section .gallery-wrapper .gallery-item {
+  height: 18em;
+  width: 49%;
+}
+
+.gallery-section .gallery-wrapper .gallery-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  padding-bottom: 1.2em;
+}

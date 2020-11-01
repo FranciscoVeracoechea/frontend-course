@@ -1,0 +1,35 @@
+/* PC media query */
+/* lg */
+@media (min-width: 1025px) {
+
+}
+/* Laptops media query */
+/* md */
+@media (max-width: 1024px) {
+
+}
+
+/* Tablet media query */
+/* sm */
+@media (max-width: 768px) {
+  body {
+    padding-left: 0;
+  }
+
+  .hero-section .hero-wrapper .hero-content p {
+    font-size: 1em;
+  }
+
+  .gallery-section .gallery-wrapper .gallery-item {
+    width: 100%;
+  }
+
+  .navigation .nav-container {
+    display: none;
+  }
+}
+/* Mobile media query */
+/* xs */
+@media (max-width: 425px) {
+
+}

@@ -1,0 +1,86 @@
+.navigation * {
+  z-index: 100;
+}
+.navigation {
+  padding: 0 2em;
+  z-index: 100;
+  position: fixed;
+  height: var(--nav-height);
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation .nav-title h1 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: var(--primary-hover);
+}
+.navigation .nav-title h1 i {
+  font-size: 1.2em;
+}
+
+.navigation .menu-btn-wrapper {
+  display: none;
+  height: 100%;
+  width: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation .menu-btn-wrapper .menu-btn {
+  background-color: transparent;
+  border: none;
+  outline: unset;
+  height: 2.4em;
+}
+
+.navigation .menu-btn-wrapper .menu-btn img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.navigation .icon-wrapper i {
+  font-size: 3em;
+  color: var(--primary-hover);
+  cursor: pointer;
+}
+
+.navigation .nav-container {
+  position: fixed;
+  top: var(--nav-height);
+  transition: all .4s ease;
+  left: 0;
+  bottom: 0;
+  background-color: var(--primary);
+  width: 180px;
+}
+.navigation .nav-container .nav-bar {
+  display: block;
+  width: 100%;
+}
+
+.navigation .nav-container .nav-bar li {
+  padding: 1em 10px;
+  transition: all .4s ease;
+  cursor: pointer;
+}
+.navigation .nav-container .nav-bar li:hover {
+  background-color: rgba(0,0,0,0.4);
+}
+
+.navigation .nav-container .nav-bar li a,
+.navigation .nav-container .nav-bar li i {
+  font-size: 1.2em;
+}
+
+.navigation .nav-container .nav-bar li i {
+  color: #f2f2f2;
+  padding-right: 1em;
+}
